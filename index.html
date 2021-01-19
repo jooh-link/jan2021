@@ -4,11 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>git version 2</title>
+    <title>git version 3</title>
 </head>
 <body>
     
-    <h1>TEST2</h1>
+    <h1>TEST3</h1>
+
+    <!-- 
+        ** 파일 내용 수정 후 해당 순간의 파일의 버전을 만들어서 저장할 때
+        1. git add .    (현재 폴더 안에서 변경된 모든 파일을 추가)
+        1-1. git status    (바뀐(modified) 내용이 올라갔는지 확인)
+        2. git commit -m "커밋 메세지"    (특정 메세지를 넣어서 버전 추가)
+        3. git log    (지금까지의 커밋내용 시간별로 확인)
+
+        git remote add origin https://github.com/jooh-link/jan2021.git
+        git config --global user.name "jooh-link"
+        git config --global user.email "kimjh0697@gmail.com"
+
+        git add .
+        git status
+        git commit -m "first commit"
+
+        git add .
+        git status
+        git commit -m "second commit"
+        git log
+
+        ** 처음 git 설치시
+
+        1. 깃허브 사이트에 가입해서 저장소 만든 후 저장소 주소 복사
+        2. git을 내 컴퓨터에 설치
+        3. 특정폴더에 작업파일들을 집어넣고 해당 폴더를 vscode로 오픈
+        4. vscode에서 터미널 창을 열고 git init (해당작업폴더안에 숨김폴더 .git생성됨)
+        5. git remote add orign 깃저장소 주소 (해당 작업폴더를 깃허브와 연동)
+        6. git config --global user.name "유저아이디" (깃허브 유저아이디 등록)
+        7. git config --global user.email "이메일" (깃허브 이메일등록)
+        5. 터미널창에서 git status를 하면 현재폴더안의 파일의 상태를 확인가능
+
+        ** git 버전별 기록 남기기
+
+        1. 작업시 중요한 작업 순간마다 파일 저장하고 터미널에 git add . (수정된 파일을 스테이지에 올림+
+        2. git commit -m "커밋메시지"를 터미널에 입력해 해당 시점의 체크포인트를 만듬
+        3. git log로 그동안의 커밋 내역을 확인 가능
+     -->
 
 </body>
 </html>
